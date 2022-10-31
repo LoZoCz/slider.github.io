@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Inter;
+    padding: 329px 350px;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    width: 1200px;
+}
+
+.textDiv{
+    position: relative;
+    font-size: 32px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: hsl(240, 38%, 20%);
+}
+
+.quotespng{
+    position: absolute;
+    z-index: -999;
+    top: -23%;
+    left: 12%;
+}
+
+.quote{
+    width: 650px;
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.back{
+    position: absolute;
+    right: -56%;
+    top: -80%;
+    z-index: -999;
+}
+
+span
+{
+    color: hsl(240, 18%, 77%);
+    font-weight: 500;
+}
+
+.photoDiv{
+    position: absolute;
+    right: 22.7%;
+    top: 19%;
+    z-index: -999;
+}
+
+.photoDiv img
+{
+    border-radius: 10px;
+}
+
+.curve
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -999;
+}
+
+.left
+{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 21.5%;
+    right: 45%;
+    background: url(../images/icon-prev.svg), white;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transition: all ease-in-out 0.15s;
+}
+
+.right
+{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 21.5%;
+    right: 42.4%;
+    background: url(../images/icon-next.svg), white;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transition: all ease-in-out 0.15s;
+}
+
+.left:hover, .right:hover{
+    filter: brightness(90%);
+}
